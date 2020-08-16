@@ -1,0 +1,120 @@
+body{
+    margin:0px;
+    width:100%;
+	height:100%;
+}
+
+.block1{
+    min-width:100%;
+    height:300px;
+}
+.info {
+    color:#F8F8FF;
+    font-weight: bold;
+    font-size: 17px;
+    transform: translate(27%,-200%);
+}
+.info h3, .block2 h3{
+    color:#7FFF00;
+    font-weight: bold;
+}
+.block3 h3{
+    color:orangered;
+}
+.contact-details{
+    list-style-type:none;
+    font-size:16px;
+	color:white;
+}
+
+.background{
+    height:300px;
+    width:100%;
+    /* Add the blur effect */
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+     /* Center and scale the image nicely */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.profile{
+    position: absolute;
+    top: 27%;
+    left: 20%;
+    z-index:3;
+    transform: translate(-60%, -60%);
+    border-radius: 5%;
+}
+.block2{
+    width:30%;
+    min-height:800px;
+    background-color:#808080;
+    color: #F8F8FF;
+    float: left;
+}
+.block3 h4,.block2 h3,.skills{
+   margin-left:25%;
+   list-style-type: none;
+   font-size:20px;
+}
+.block2 p{
+    font-size:19px;
+    margin-left:17px;
+}
+.block3{
+    width:70%;
+    min-height:800px;
+    background-color:gainsboro;
+    color: black;
+    float: right;
+}
+.block3 h2,h3,.achivements-details p,.project-details p{
+    margin-left:13%;
+    font-size:22px;
+}
+.block4{
+    margin-top:750px;
+    min-height:350px;
+    background-color: darkslategray;
+    color: floralwhite;
+    min-width: 100%;
+}
+.facebook,.linkedin,.instagram,.mail,.github{
+    width:20px;
+    height: 20px;
+    align-items: center;
+    margin-left: 30px;
+}
+/*tablet*/
+@media screen and (max-width:768px){
+	.block2{
+			width:100%;
+	}
+	.block3{
+		width:100%;
+	}
+	.block4{
+		width:100%;
+		text-align:center;
+	}
+}
+/*mobile*/
+@media screen and (max-width:320px){
+	.block1 .contact-details{
+		font-size:15px;
+		margin-left:-10%;
+	}
+	.block1 h3{
+		color:orangered;
+	}
+	.block2{
+		width:100%;
+	}
+	.block3{
+		width:100%;
+	}
+	.block4{
+		width:100%;
+	}
+}
